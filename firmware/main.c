@@ -128,7 +128,7 @@ void controlMotor2(MotorState state, uint8_t speed)
 			pwm_set_duty(&htim1, TIM_CHANNEL_1, 100-speed); //in 4
 			break;
 		case MOTOR_CCW:
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4 , GPIO_PIN_RESET); //ins3
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4 , GPIO_PIN_RESET); 
 			pwm_set_duty(&htim1, TIM_CHANNEL_1, speed);
 			break;
 	}
