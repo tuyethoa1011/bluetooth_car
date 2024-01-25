@@ -10,10 +10,10 @@ Name: assets/FCE-Site-logo.png
 SHA1-Digest: 1/ae66NSKYnglaLoutvb7/0XWpQ=
 
 Name: classes.dex
-SHA1-Digest: nYICH4ds+Rnj6+u2x9Psb2g4Y+0=
+SHA1-Digest: iN6FL1+i2a4Pk8T2tMIdFE4DeKE=
 
 Name: classes2.dex
-SHA1-Digest: N/6IxwPLnBgJVT/UViu5PqHbbNc=
+SHA1-Digest: XEFhtWcml95bzaPfx4MoGI+WKOU=
 
 Name: res/anim/abc_fade_in.xml
 SHA1-Digest: AcuBNEx7Jg8K6XCieCSQfQAJk5Q=

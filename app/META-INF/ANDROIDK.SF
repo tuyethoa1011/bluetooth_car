@@ -1,6 +1,6 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: Ck5WLF6Xp4KsxJei3ofupWXwnSo=
+SHA1-Digest-Manifest: 9jag++OOXsUFhniAiKiMJgLJj8w=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
@@ -13,10 +13,10 @@ Name: assets/FCE-Site-logo.png
 SHA1-Digest: zSENiAFNLxJZNbDDwN3Hby94390=
 
 Name: classes.dex
-SHA1-Digest: L5A6c3aeUkitW2YcIYCoSkLv054=
+SHA1-Digest: WJmmsYtVAKhLEclL8Ld5z5CLTfQ=
 
 Name: classes2.dex
-SHA1-Digest: +rWydaKjGhroHQT51S8WVYRwXwg=
+SHA1-Digest: FYSm8B84HsOoZEmTeDlNgkQe74g=
 
 Name: res/anim/abc_fade_in.xml
 SHA1-Digest: xuSWnlSNBpBW5KZZ6AqoycVG4bY=
