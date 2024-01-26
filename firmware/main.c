@@ -37,6 +37,11 @@ typedef enum
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define BUFFER_LEN 1
+#define STOP_CTRL 0x00
+#define MOVE_FORWARD 0x01
+#define MOVE_BACKWARD 0x02
+#define TURN_RIGHT 0x03
+#define TURN_LEFT 0x04
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -128,7 +133,7 @@ void controlMotor2(MotorState state, uint8_t speed)
 			pwm_set_duty(&htim1, TIM_CHANNEL_1, 100-speed); //in 4
 			break;
 		case MOTOR_CCW:
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4 , GPIO_PIN_RESET); 
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4 , GPIO_PIN_RESET); //ins3
 			pwm_set_duty(&htim1, TIM_CHANNEL_1, speed);
 			break;
 	}
@@ -180,17 +185,23 @@ int main(void)
   {
 	switch(Rx_buffer[0])
 	{
-		case 0x01:
+		case MOVE_FORWARD: //forward
 			controlMotor1(MOTOR_CW, 50);
 			controlMotor2(MOTOR_CW, 50);
 		  	break;
-		case 0x02:
+		case MOVE_BACKWARD: //backward
 		  	controlMotor1(MOTOR_CCW, 50);
 		  	controlMotor2(MOTOR_CCW, 50);
 		  	break;
-		case 0x00:
+		case STOP_CTRL: //stop
 			controlMotor1(MOTOR_STOP, 0);
 			controlMotor2(MOTOR_STOP, 0);
+			break;
+		case TURN_LEFT:
+			controlMotor1(MOTOR_CW, 50); //check if it the right wheel to turn left
+			break;
+		case TURN_RIGHT:
+			controlMotor2(MOTOR_CW, 50); //check if it the right wheel to turn right
 			break;
 		default:
 		  	controlMotor1(MOTOR_STOP, 0);
