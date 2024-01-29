@@ -5,5 +5,5 @@ My childhood dream present finally comes to reality ^^
 - Current status: SW: App - Good, Firmware STM32 - Good | HW: Connector and overall design still not good at all in my opinion.
 
 
-SAMPLE:
-.... UPDATE LATER ....
+DEMO SAMPLE:
+https://www.youtube.com/watch?v=OaVLYcr2rHc
